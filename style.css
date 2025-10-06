@@ -1,8 +1,8 @@
 /* Base styling */
 body {
     font-family: "Garamond", serif;
-    background-color: #f8f8f8;
-    color: #2e2e2e;
+    background-color: #8b324d;
+    color: #2e111a;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -11,8 +11,7 @@ body {
 header {
     text-align: center;
     padding: 3rem 1rem;
-    background: linear-gradient(135deg, #b57170, #87ae73);
-    color: #fff;
+    background-image: url(https://vaiseshablog.wordpress.com/wp-content/uploads/2018/03/tumblr_no1l4jhwom1u8dfaeo7_500.gif);
 }
 
 header h1 {
@@ -88,3 +87,4 @@ footer {
     font-size: 0.9rem;
     margin-top: 3rem;
 }
+

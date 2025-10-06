@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rita's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> souradrita bhowmik </h1>
+        <p> this is my creative outlet </p>
+        <nav>
+            <a href="#solidworks">SolidWorks</a>
+            <a href="#art">Art</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#media">Media Reviews</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="solidworks" class="content">
+            <h2>SolidWorks Projects</h2>
+            <p>Designs, prototypes, and 3D models I’ve created in SolidWorks — where creativity meets engineering.</p>
+            <button onclick="alert('SolidWorks projects coming soon!')">View Projects</button>
+        </section>
+
+        <section id="art" class="content">
+            <h2>Art Projects</h2>
+            <p>Sketches, paintings, and experimental pieces that explore movement and emotion through color and form.</p>
+            <button onclick="alert('Art projects coming soon!')">Explore Art</button>
+        </section>
+
+        <section id="gallery" class="content">
+            <h2>Art Gallery</h2>
+            <p>A collection of finished works and works-in-progress — a visual journal of my growth.</p>
+            <button onclick="alert('Gallery coming soon!')">Open Gallery</button>
+        </section>
+
+        <section id="media" class="content">
+            <h2>Media Reviews</h2>
+            <p>Thoughts and reflections on films, music, and media that shaped my perspective.</p>
+            <button onclick="alert('Media reviews coming soon!')">Read Reviews</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 souradrita •</p>
+    </footer>
+
+    <script>
+        // Subtle scroll animation
+        const sections = document.querySelectorAll('.content');
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                const top = window.scrollY;
+                const offset = sec.offsetTop - 400;
+                const height = sec.offsetHeight;
+                if (top > offset && top < offset + height) {
+                    sec.classList.add('show');
+                } else {
+                    sec.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
